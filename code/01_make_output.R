@@ -1,3 +1,4 @@
+setwd("/Users/zhaojie/Desktop/DATA550/GitHub_practice")
 here::i_am(
   "code/01_make_output.R"
 )
@@ -25,3 +26,6 @@ saveRDS(
   random_numbers3,
   file = here::here("output", "random_numbers3.rds")
 )
+set.seed(5)
+random_numbers5 <- rgeom(100, 0.25)
+saveRDS(random_numbers5, file = "output/random_numbers5.rds")
