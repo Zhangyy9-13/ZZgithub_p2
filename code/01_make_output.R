@@ -1,4 +1,4 @@
-setwd("/Users/zhaojie/Desktop/DATA550/GitHub_practice")
+setwd(here::here())
 here::i_am(
   "code/01_make_output.R"
 )
